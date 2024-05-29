@@ -1,0 +1,44 @@
+
+    <div class="container">  
+        <div class="d-flex justify-content-center">
+            <div class="row text-white my-4 text-center">
+            <!-- <div class="col-12 col-md-6">{{ data.location.localtime | date:'h:mm:ss a' }}</div>
+            <div class="col-md-6  ms-auto">{{data.location.name}}, {{data.location.country}}</div>
+            <div class="col-12 col-md-6">{{ data.location.localtime | date:'MMMM dd  y' }}</div> -->
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-8 col-sm-10 col-10  mx-auto mb-5 d-flex position-relative">
+                <span class=" bg-transparent border-0" > <i class="fa-solid fa-magnifying-glass text-info"></i>
+                </span>
+          <input class="form-control rounded-pill  px-5"  placeholder="Enter Location" type="search" [(ngModel)]="search">
+        
+            </div>
+       
+    </div>
+    <div class="container">
+                    <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 g-4 rounded content p-4 pb text-center d-flex align-items-cener  justify-content-center">
+                    @for (day of data ; track day.min) {
+                    <div class="col">
+                      <div class="card text-white bg-transparent border-info">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-cener ">
+                                <h6>{{day.date | date:'EEE'}}</h6>
+                                <h6>{{day.date | date:'MMMM d '}}</h6>
+                                </div>
+                                <hr>
+                                <h4>{{day.max}} <sup>o</sup>C</h4>
+                                <h6>{{day.min}} <sup>o</sup>C</h6>
+                        <img src="../../../assets/images.png" alt="weather icon" style="width: 150px;">
+                        <h6>{{day.condition}}</h6>
+                        </div>
+                      </div>
+                    </div>
+           }
+        </div>
+    </div>
+    
+    </div>
+
+    
+

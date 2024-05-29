@@ -1,0 +1,19 @@
+
+.content{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.card{
+    cursor: pointer;
+    transition: 0.8s;
+}
+.card:hover{
+    transform: scale(1.1,1.1);
+}
+span{
+    position: absolute;
+    left: 30px;
+    top: 7px;
+
+}
+
+
