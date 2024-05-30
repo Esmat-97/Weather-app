@@ -1,5 +1,7 @@
 # Weather-app
+
 Mean stack
+
 ## Installation
 
 To use this project, follow these steps:
